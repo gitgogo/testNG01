@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--<?xml version="1.0" encoding="utf-8" ?>-->
+<suite name="接口测试" parallel="false" verbose="1">
+    <test name="CommonTest">
+        <classes>
+            <class name="CommonTest.commonTest01"></class>
+        </classes>
+    </test>
+
+    <listeners>
+        <!--testng的XML配置文件中添加这些内容-->
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+</suite>
